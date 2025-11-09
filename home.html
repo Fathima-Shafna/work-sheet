@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blossom Flower Shop</title>
+    <style>
+.hero-home {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6b9d 0%, #ffc4d6 50%, #ffe4f1 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-home .hero-content h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    animation: slideInDown 1s ease;
+}
+
+.hero-home .hero-content p {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 2rem;
+    animation: slideInUp 1.2s ease;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: white;
+    color: #ff6b9d;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(255,255,255,0.4);
+}
+
+/* Featured Flowers */
+.featured-flowers {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.featured-flowers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c06c84;
+    margin-bottom: 3rem;
+}
+
+.flower-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.showcase-card {
+    background: linear-gradient(135deg, #fff5f7 0%, #ffe4f1 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.showcase-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+}
+
+.showcase-card h3 {
+    font-size: 1.8rem;
+    color: #c06c84;
+    margin-bottom: 0.5rem;
+}
+
+.showcase-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.showcase-card .price {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6b9d;
+}
+
+/* Why Choose Us */
+.why-us {
+    padding: 5rem 2rem;
+    background: #ffeef8;
+}
+
+.why-us h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #c06c84;
+    margin-bottom: 3rem;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reason-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.reason-box:hover {
+    transform: translateY(-5px);
+}
+
+.reason-icon {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.reason-box h4 {
+    font-size: 1.5rem;
+    color: #c06c84;
+    margin-bottom: 0.5rem;
+}
+
+.reason-box p {
+    color: #666;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Blossom</div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-home">
+        <div class="hero-content">
+            <h1>Welcome to Blossom Flower Shop</h1>
+            <p>Where Every Bloom Tells a Story</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Shop Flowers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Flowers -->
+    <section class="featured-flowers">
+        <div class="container">
+            <h2>Featured This Week</h2>
+            <div class="flower-showcase">
+                <div class="showcase-card">
+                    <h3>Rose Bouquet</h3>
+                    <p>12 Red Roses</p>
+                    <span class="price">₹799</span>
+                </div>
+                <div class="showcase-card">
+                    <h3>Sunflower Bundle</h3>
+                    <p>10 Bright Sunflowers</p>
+                    <span class="price">₹599</span>
+                </div>
+                <div class="showcase-card">
+                    <h3>Mixed Bouquet</h3>
+                    <p>Seasonal Mix</p>
+                    <span class="price">₹899</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose Blossom?</h2>
+            <div class="reasons-grid">
+                <div class="reason-box">
+                    <h4>Fast Delivery</h4>
+                    <p>Same day delivery available</p>
+                </div>
+                <div class="reason-box">
+                    <h4>Fresh Flowers</h4>
+                    <p>Sourced daily from farms</p>
+                </div>
+                <div class="reason-box">
+                    <h4>Gift Ready</h4>
+                    <p>Beautiful packaging included</p>
+                </div>
+                <div class="reason-box">
+                    <h4>Best Quality</h4>
+                    <p>Premium flowers guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Blossom Flower Shop © 2024</p>
+    </footer>
+</body>
+</html>
